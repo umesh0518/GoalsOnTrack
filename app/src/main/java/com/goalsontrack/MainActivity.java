@@ -3,7 +3,7 @@ package com.goalsontrack;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-//This is Homepage
+//This is Homepage for entire system
 public class MainActivity extends AppCompatActivity {
 
     @Override
