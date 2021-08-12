@@ -11,6 +11,6 @@ public class flashcard_home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flashcard_home1);
+        setContentView(R.layout.activity_flashcard_home);
     }
 }

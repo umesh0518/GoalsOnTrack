@@ -11,6 +11,6 @@ public class todo_home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo_home1);
+        setContentView(R.layout.activity_todo_home);
     }
 }
