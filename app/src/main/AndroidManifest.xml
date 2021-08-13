@@ -16,7 +16,7 @@
         <activity android:name=".todo.todo_home" />
         <activity android:name=".moneytracking.moneytracking_home" />
         <activity android:name=".flashcard.flashcard_home" />
-        <activity android:name=".Homepage">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
