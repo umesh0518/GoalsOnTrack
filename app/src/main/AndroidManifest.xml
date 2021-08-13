@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoalsOnTrack">
-        <activity android:name=".reminders.test"></activity>
+        <activity android:name=".flashcard.test"></activity>
+        <activity android:name=".reminders.test" />
         <activity android:name=".test.MainActivity" />
         <activity android:name=".todo.todo_home" />
         <activity android:name=".reminders.reminder_home" />
