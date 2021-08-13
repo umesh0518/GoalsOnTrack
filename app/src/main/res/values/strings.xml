@@ -18,7 +18,7 @@
     <!-- end money tracking  -->
 
     <!-- flashcard -->
-
+    <string name="f_btn_add_categroy">Add Category</string>
 
     <!-- end flashcard -->
 </resources>
