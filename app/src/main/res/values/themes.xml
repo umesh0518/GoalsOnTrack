@@ -13,4 +13,21 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <!-- to-do list -->
+
+    <!-- end to do list -->
+
+    <!-- reminders -->
+
+    <!-- end reminders -->
+
+    <!-- money tracking -->
+
+    <!-- end money tracking  -->
+
+    <!-- flashcard -->
+
+    <!-- end flashcard -->
 </resources>

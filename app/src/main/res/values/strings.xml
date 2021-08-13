@@ -1,3 +1,22 @@
 <resources>
+    <!-- homepage -->
     <string name="app_name">GoalsOnTrack</string>
+
+
+    <!-- to-do list -->
+
+    <!-- end to do list -->
+
+    <!-- reminders -->
+
+    <!-- end reminders -->
+
+    <!-- money tracking -->
+
+    <!-- end money tracking  -->
+
+    <!-- flashcard -->
+
+    <!-- end flashcard -->
 </resources>
+
