@@ -20,7 +20,7 @@
 
 <!-- flashcard -->
 
-    <!--flashcard_homepage-->
+    <!---->
     <string name="f_home_text">Create your first Category</string>
     <string name="f_all_category">All Category</string>
     <string name="f_add_button">Add</string>
