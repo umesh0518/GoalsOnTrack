@@ -10,8 +10,11 @@
     <string name="t_done_bttn">Done</string>
     <string name="t_tasks_heading">Tasks</string>
     <string name="add_new_task_bttn">Add new Task</string>
-
-<!-- end to do list -->
+    <string name="todo_create_bttn">CREATE</string>
+    <string name="todo_cancel_bttn">CANCEL</string>
+    <string name="edit_done_bttn">DONE</string>
+    <string name="edit_cancel_bttn">CANCEL</string>
+    <!-- end to do list -->
 
 <!-- reminders -->
 

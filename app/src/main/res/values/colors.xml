@@ -10,9 +10,17 @@
 
 <!-- end: common color for entire system -->
 
-
     <!-- to-do list -->
-
+    <color name="blue_todo_button">#0844a4</color>
+    <color name="blue_Done_button">#0844a4</color>
+    <color name="blue_Spinner_button">#0844a4</color>
+    <color name="blue_addNewTask_button">#428bca</color>
+    <color name="Tasks_color">#0844a4</color>
+    <color name="create_todo_color">#FFFFFF</color>
+    <color name="cancel_todo_color">#FFFFFF</color>
+    <color name="addTask_color">#0844a4</color>
+    <color name="edit_done_color">#FFFFFF</color>
+    <color name="edit_cancel_color">#FFFFFF</color>
     <!-- end to do list -->
 
     <!-- reminders -->
