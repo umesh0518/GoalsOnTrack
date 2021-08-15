@@ -1,19 +1,28 @@
 <resources>
 <!-- homepage -->
-    <string name="app_name">GoalsOnTrack</string>
+
 <!-- end of homepage -->
 
 
 <!-- to-do list -->
     <string name="t_appbar"></string>
     <string name="t_todo_bttn">Todo</string>
+    <string name="t_spinner"></string>
     <string name="t_done_bttn">Done</string>
     <string name="t_tasks_heading">Tasks</string>
-    <string name="add_new_task_bttn">Add new Task</string>
-    <string name="todo_create_bttn">CREATE</string>
-    <string name="todo_cancel_bttn">CANCEL</string>
-    <string name="edit_done_bttn">DONE</string>
-    <string name="edit_cancel_bttn">CANCEL</string>
+    <string name="t_add_new_task_bttn">Add new Task</string>
+    <string name="t_todo_create_bttn">CREATE</string>
+    <string name="t_todo_cancel_bttn">CANCEL</string>
+    <string name="t_edit_done_bttn">DONE</string>
+    <string name="t_edit_cancel_bttn">CANCEL</string>
+    <string name="t_all_radiobttn">All</string>
+    <string name="t_work_radiobttn">Work</string>
+    <string name="t_study_radiobttn">Study</string>
+    <string name="t_meditation_radiobttn">Meditation</string>
+    <string name="t_reading_radiobttn">Reading</string>
+    <string name="t_home_radiobttn">Home</string>
+    <string name="t_other_radiobttn">Other</string>
+    <string name="t_switch_Work_Space">Switch Workspace</string>
     <!-- end to do list -->
 
 <!-- reminders -->
