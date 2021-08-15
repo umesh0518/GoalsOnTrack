@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reminders -->
+
+<resources>
+
+    <string name="r_search_bar">Search</string>
+    <string name="r_delete_bttn">Delete</string>
+    <string name="r_add_new_reminder_bttn">Add new Reminder</string>
+    <string name="r_select_year">Select year</string>
+    <string name="r_select_day">Select day</string>
+    <string name="r_select_month">Select month</string>
+
+</resources>
+
+    <!-- end reminders -->
