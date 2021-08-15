@@ -3,12 +3,46 @@
 
 
 <!-- common color for entire system -->
-    <color name="blue_dark">#033076</color>
-    <color name="blue_light">#0844a4</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="black">#FF000000</color>
+
 
 <!-- end: common color for entire system -->
 
+    <!-- to-do list -->
+
+    <color name="t_blue_todo_button">#0844a4</color>
+    <color name="t_blue_Done_button">#0844a4</color>
+    <color name="t_list_color">#FFFFFF</color>
+    <color name="t_blue_Spinner_button">#0844a4</color>
+    <color name="t_blue_addNewTask_button">#428bca</color>
+    <color name="t_Tasks_color">#0844a4</color>
+    <color name="t_create_todo_color">#FFFFFF</color>
+    <color name="t_cancel_todo_color">#FFFFFF</color>
+    <color name="t_addTask_color">#0844a4</color>
+    <color name="t_edit_done_color">#FFFFFF</color>
+    <color name="t_edit_cancel_color">#FFFFFF</color>
+    <color name="t_switch_work_space_color">#FFFFFF</color>
+    <color name="t_all_radiobttn_color">#FFFFFF</color>
+    <color name="t_work_radiobttn_color">#FFFFFF</color>
+    <color name="t_study_radiobttn_color">#FFFFFF</color>
+    <color name="t_meditation_radiobttn_color">#FFFFFF</color>
+    <color name="t_reading_radiobttn_color">#FFFFFF</color>
+    <color name="t_home_radiobttn_color">#FFFFFF</color>
+    <color name="t_other_radiobttn_color">#FFFFFF</color>
+    <color name="t_container1_color">#033076</color>
+    <color name="t_container2_color">#033076</color>
+
+    <!-- end to do list -->
+
+    <!-- reminders -->
+
+    <!-- end reminders -->
+
+    <!-- money tracking -->
+
+    <!-- end money tracking  -->
+
+    <!-- flashcard -->
+
+    <!-- end flashcard -->
 
 </resources>
