@@ -4,4 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".flashcard.flashcard_home"/>
+    tools:context=".flashcard.flashcard_home">
+
+    <Spinner
+        android:id="@+id/flashcard_spinner"
+        android:layout_width="267dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="76dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/flashcard_home_text"
+        android:layout_width="307dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="@string/flashcard_home_text"
+        android:textColor="@color/dark_shade_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="123dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashcard_spinner"
+        app:srcCompat="@drawable/note_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashcard_home_text"
+        app:srcCompat="@drawable/add_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- flashcard -->
-    <string name="f_home_text">Create your first Category</string>
+    <string name="flashcard_home_text">Create your first Category</string>
+    <string-array name="all_category_flashcard">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
     <string name="f_all_category">All Category</string>
     <string name="f_add_button">Add</string>
     <string name="f_add_card_button">ADD CARD</string>
