@@ -15,8 +15,10 @@
     </string-array>
     <string name="f_all_category">All Category</string>
     <string name="f_add_button">Add</string>
+    <string name="f_cancel_button">Cancel</string>
     <string name="f_add_card_button">ADD CARD</string>
     <string name="f_practice_button">PRACTICE</string>
+    <string name="f_add_category_string">Add name of new category</string>
     <string name="f_back_button">Back</string>
     <string name="f_display_all_list">ALL</string>
     <string name="f_display_reviewed_list">REVIEWED</string>

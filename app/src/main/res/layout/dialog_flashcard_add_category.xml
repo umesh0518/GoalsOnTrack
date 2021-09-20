@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/f_category_user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/f_add_category_string"
+            android:inputType="textPersonName"
+            android:layout_margin="20dp"/>
+
+
+
+        <Button
+            android:id="@+id/f_cancel_category_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red_for_cancel_buttons"
+            android:text="@string/f_cancel_button"
+            android:layout_below="@+id/f_category_user_input"
+
+            />
+
+        <Button
+            android:id="@+id/f_add_category_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_shade_blue"
+            android:text="@string/f_add_button"
+            android:layout_below="@+id/f_category_user_input"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -9,28 +9,11 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <!-- common color for entire system -->
+    <!-- common color for entire system please use reusable colors names  -->
 
     <color name="light_shade_blue">#0844a4</color>
     <color name="dark_shade_blue">#033076</color>
-
-    <!-- end: common color for entire system -->
-
-    <!-- to-do list -->
-
-    <!-- end to do list -->
-
-    <!-- reminders -->
-
-    <!-- end reminders -->
-
-    <!-- money tracking -->
-
-    <!-- end money tracking  -->
-
-    <!-- flashcard -->
-
-    <!-- end flashcard -->
+    <color name="red_for_cancel_buttons">#CA473D</color>
 
 
 </resources>
