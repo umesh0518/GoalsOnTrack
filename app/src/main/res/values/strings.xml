@@ -3,6 +3,10 @@
     <string name="app_name">GoalsOnTrack</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="t_todo_menu_bttn">todo</string>
+    <string name="mt_money_tracking_menu_bttn" />
+    <string name="money_tracking_menu_bttn">Money Tracking</string>
+    <string name="r_reminder_bttn">Reminder</string>
 
 
 </resources>
