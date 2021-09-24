@@ -14,8 +14,40 @@
         android:onClick="loadFlashcard"
         android:text="@string/flashcard_menu_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/todo_bttn"
+        android:layout_width="161dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="52dp"
+        android:onClick="loadTodoList"
+        android:text="@string/td_menu_bttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashcard_menu_name" />
+
+    <Button
+        android:id="@+id/mt_bttn"
+        android:layout_width="161dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="52dp"
+        android:onClick="loadMoneyTracking"
+        android:text="@string/mt_menu_bttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo_bttn" />
+
+    <Button
+        android:id="@+id/reminders_bttn"
+        android:layout_width="161dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="52dp"
+        android:onClick="loadReminder"
+        android:text="@string/reminder_menu_bttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mt_bttn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
