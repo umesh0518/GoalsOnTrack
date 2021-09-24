@@ -6,6 +6,7 @@
     <string name="mt_menu_bttn">money tracking</string>
     <string name="td_menu_bttn">todo</string>
     <string name="reminder_menu_bttn">reminders</string>
+    <string name="td_save_bttn">save</string>
 
 
 </resources>
