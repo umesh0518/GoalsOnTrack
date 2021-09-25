@@ -102,6 +102,17 @@ public class HomepageListViewFragment extends Fragment {
                         Toast.makeText(getContext(), "Deleted successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
+                holder.title.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getActivity(), AllWordInCategory.class);
+                        intent.putExtra("key",key);
+                        intent.putExtra("childKey", wordName);
+                        startActivity(intent);
+                        Toast.makeText(getContext(), "Opening all words in the category ",Toast.LENGTH_SHORT).show();
+
+                    }
+                });
 
             }
 

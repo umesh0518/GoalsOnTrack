@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".flashcard.EditWord">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/dark_shade_blue"
+    android:id="@+id/edit_dialog_top_layout"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_below="@+id/edit_dialog_top_layout">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_edit_word_name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_edit_word_defination"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/f_edit_word_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_edit_word_sentence"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/f_edit_word_defination"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_confirm_edit_word"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/f_edit_word_sentence"
+        android:backgroundTint="@color/light_shade_blue"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:text="Confirm Edit"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_cancel_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/f_edit_word_sentence"
+        android:backgroundTint="@color/red_for_cancel_buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Cancel"/>
+
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

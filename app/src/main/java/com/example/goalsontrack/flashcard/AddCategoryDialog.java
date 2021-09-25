@@ -87,7 +87,7 @@ public class AddCategoryDialog extends DialogFragment  {
 
                         //dbReference.push().setValue(categories);
                         Word word = new Word();
-                        word.setWord("");
+                        word.setWord("dummy word here");
                         word.setDefinations("");
                         word.setSentence((""));
                         categories.setWordObj(word);
@@ -104,7 +104,7 @@ public class AddCategoryDialog extends DialogFragment  {
 
                     }
 
-                }catch(Exception e){
+                 }catch(Exception e){
                     Log.d("Error:", "Error occured:"+e );
                 }
 

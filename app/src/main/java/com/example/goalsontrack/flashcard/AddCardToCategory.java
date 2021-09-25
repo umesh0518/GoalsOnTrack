@@ -87,12 +87,7 @@ public class AddCardToCategory extends AppCompatActivity {
 
                         dbReference.child(wordObject.getWord()).setValue(wordObject);
                         Toast.makeText(AddCardToCategory.this, "Data added successfully", Toast.LENGTH_SHORT).show();
-                        //finish();// will finish this activity and return to calling
-                        Intent intent = new Intent(AddCardToCategory.this, AllWordInCategory.class);
-                        intent.putExtra("parentKey", parentKey);
-                        intent.putExtra("childKey", childKey);
-                        startActivity(intent);
-
+                        finish();// will finish this activity and return to calling
 
                     }
 

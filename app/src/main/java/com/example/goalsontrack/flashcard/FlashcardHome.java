@@ -24,7 +24,7 @@ public class FlashcardHome extends AppCompatActivity {
     Fragment fragment_list_view_home = new HomepageListViewFragment();
     Fragment fragment_empty_home = new EmptyHomepageFragment();
 
-    private int test = 11;
+    private int test = 1;
 
 
 

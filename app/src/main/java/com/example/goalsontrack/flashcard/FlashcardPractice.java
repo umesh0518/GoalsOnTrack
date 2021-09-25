@@ -30,20 +30,18 @@ public class FlashcardPractice extends AppCompatActivity {
 
     private static final String TAG = "Add word dialog: ";
 
-    //variables
-    ArrayList<Word> allWords = new ArrayList<>();
 
     //database reference
-    DatabaseReference dbReference;
+    private DatabaseReference dbReference;
 
     //views
     Button btnShowAnswer, btnNext, btnPrevious, btnClose;
     TextView frontQuestionSide, backAnswerSide;
 
     //firebaseUI recyclerView
-    FirebaseRecyclerOptions<Word> options;
-    FirebaseRecyclerAdapter<Word, PracticeViewHolder> adapter;
-    RecyclerView practiceRecyclerView;
+    private FirebaseRecyclerOptions<Word> options;
+    private FirebaseRecyclerAdapter<Word, PracticeViewHolder> adapter;
+    private RecyclerView practiceRecyclerView;
 
 
 
@@ -102,7 +100,7 @@ public class FlashcardPractice extends AppCompatActivity {
                 holder.btnShowAnswer.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(v.getContext(), "hehehee"+position, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(v.getContext(), ""+position, Toast.LENGTH_SHORT).show();
                     }
                 });
                 Log.i("message","value of model.getWord"+model.getWord());

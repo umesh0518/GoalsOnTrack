@@ -14,14 +14,14 @@ import org.jetbrains.annotations.NotNull;
 public class WordsViewHolder extends RecyclerView.ViewHolder {
 
     //setting up view variables
-    TextView word;
+    TextView word_name;
     ImageView edit_btn, delete_btn, menu_btn;
 
 
     public WordsViewHolder(@NonNull @NotNull View itemView) {
         super(itemView);
 
-        word = itemView.findViewById(R.id.f_word_title);
+        word_name = itemView.findViewById(R.id.f_word_title);
         edit_btn = itemView.findViewById(R.id.f_word_edit_btn);
         delete_btn = itemView.findViewById(R.id.f_word_delete_btn);
         menu_btn = itemView.findViewById(R.id.f_3_dot_menu);
