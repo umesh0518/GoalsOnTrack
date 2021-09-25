@@ -34,9 +34,6 @@ public class FlashcardPractice extends AppCompatActivity {
     //database reference
     private DatabaseReference dbReference;
 
-    //views
-    Button btnShowAnswer, btnNext, btnPrevious, btnClose;
-    TextView frontQuestionSide, backAnswerSide;
 
     //firebaseUI recyclerView
     private FirebaseRecyclerOptions<Word> options;
@@ -51,9 +48,6 @@ public class FlashcardPractice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flashcard_practice);
 
-
-//        // Inflate the layout for this fragment
-//        View view = inflater.inflate(R.layout.fragment_flashcard_homepage_list_view, container, false);
 
         // initializing all the categories list to inside recycler view using firebaseUI
         practiceRecyclerView = findViewById(R.id.f_practice_layout_recyclerView);
@@ -71,11 +65,10 @@ public class FlashcardPractice extends AppCompatActivity {
         Log.i("messaage:", "message from previous activity in test is of child is : :"+childKey);
 
 
-        //setting up view variables
-        btnClose = findViewById(R.id.f_btn_close_practice);
-        btnShowAnswer = findViewById(R.id.f_show_answer);
-        frontQuestionSide = findViewById(R.id.f_card_front);
-        backAnswerSide = findViewById(R.id.f_card_back);
+//        //setting up view variables
+//        btnClose = findViewById(R.id.f_btn_close_practice);
+//        btnShowAnswer = findViewById(R.id.f_show_answer);
+//        btnShowQuestion = findViewById(R.id.f_show_question_again);
 
 
         //db reference
@@ -88,9 +81,12 @@ public class FlashcardPractice extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull @NotNull PracticeViewHolder holder, int position, @NonNull @NotNull Word model) {
 
+
+
+
                 // this value is going to PracticeViewHolder
                 holder.frontQuestionSide.setText(""+model.getWord());
-                holder.backAnswerSide.setText(""+model.getDefinations());
+                holder.backAnswerSide.setText("Word: "+model.getWord()+"\n\n"+"Defination: "+model.getDefinations()+"\n\n"+"Sentence: "+model.getSentence());
                 holder.btnClose.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -100,9 +96,38 @@ public class FlashcardPractice extends AppCompatActivity {
                 holder.btnShowAnswer.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(v.getContext(), ""+position, Toast.LENGTH_SHORT).show();
+                        //View holder
+                        TextView backAnswerSide = findViewById(R.id.f_card_back);
+                        TextView frontQuestionSide = findViewById(R.id.f_card_front);
+                        Button btnShowAnswer = findViewById(R.id.f_show_answer);
+                        Button btnShowQuestion = findViewById(R.id.f_show_question_again);
+
+                        //making  frontside and showanswer button invisible
+                        frontQuestionSide.setVisibility((TextView.INVISIBLE));
+                        btnShowAnswer.setVisibility(Button.INVISIBLE);
+                        btnShowQuestion.setVisibility(Button.VISIBLE);
+                        backAnswerSide.setVisibility(TextView.VISIBLE);
+
                     }
                 });
+                holder.btnShowQuestion.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //View holder
+                        TextView backAnswerSide = findViewById(R.id.f_card_back);
+                        TextView frontQuestionSide = findViewById(R.id.f_card_front);
+                        Button btnShowAnswer = findViewById(R.id.f_show_answer);
+                        Button btnShowQuestion = findViewById(R.id.f_show_question_again);
+
+                        //making  frontside and showanswer button invisible
+                        btnShowQuestion.setVisibility(Button.INVISIBLE);
+                        backAnswerSide.setVisibility(TextView.INVISIBLE);
+                        frontQuestionSide.setVisibility((TextView.VISIBLE));
+                        btnShowAnswer.setVisibility(Button.VISIBLE);
+
+                    }
+                });
+
                 Log.i("message","value of model.getWord"+model.getWord());
 
 

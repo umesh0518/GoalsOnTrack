@@ -26,6 +26,7 @@
     <string name="f_good_button">GOOD</string>
     <string name="f_hard_button">HARD</string>
     <string name="f_edit_word_button">EDIT</string>
+    <string name="f_show_qn_btn">Show Question</string>
     <string name="f_confirm_edit_word_button">CONFIRM EDIT</string>
 
     <!-- end flashcard -->

@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 public class PracticeViewHolder extends RecyclerView.ViewHolder {
 
     //setting up view variables
-    Button btnNext, btnPrevious, btnClose, btnShowAnswer;
+    Button btnNext, btnPrevious, btnClose, btnShowAnswer, btnShowQuestion;
     TextView frontQuestionSide, backAnswerSide;
 
 
@@ -25,10 +25,10 @@ public class PracticeViewHolder extends RecyclerView.ViewHolder {
         //setting up view variables
         btnClose = itemView.findViewById(R.id.f_btn_close_practice);
         btnShowAnswer = itemView.findViewById(R.id.f_show_answer);
+        btnShowQuestion = itemView.findViewById(R.id.f_show_question_again);
         frontQuestionSide = itemView.findViewById(R.id.f_card_front);
         backAnswerSide = itemView.findViewById(R.id.f_card_back);
 
-        //backAnswerSide.setVisibility(INVISIBLE);
 
     }
 
