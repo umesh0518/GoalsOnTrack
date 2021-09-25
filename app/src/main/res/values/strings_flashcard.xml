@@ -3,16 +3,7 @@
     <!-- flashcard -->
     <string name ="flashcard_menu_name">Flashcard</string>
     <string name="flashcard_home_text">Create your first Category</string>
-    <string-array name="all_category_flashcard">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
+
     <string name="f_all_category">All Category</string>
     <string name="f_add_button">Add</string>
     <string name="f_cancel_button">Cancel</string>
@@ -24,9 +15,11 @@
     <string name="f_display_reviewed_list">REVIEWED</string>
     <string name="f_display_not_reviewed_list">NOT REVIEWED</string>
     <string name="f_enter_word">Enter Word</string>
-    <string name="f_enter_sentences">Sentences</string>
-    <string name="f_enter_definitions">Enter Definitions for the word</string>
+    <string name="f_enter_sentences">Sentence</string>
+    <string name="f_enter_definitions">Enter Definition for the word</string>
     <string name="f_add_more_button">ADD MORE</string>
+    <string name="f_next_card">Next</string>
+    <string name="f_previous_card">Previous</string>
     <string name="f_show_answer">SHOW ANSWER</string>
     <string name="f_not_sure_button">NOT SURE</string>
     <string name="f_easy_button">EASY</string>

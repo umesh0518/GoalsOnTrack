@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_layout_word_detail"
+    android:layout_centerVertical="true"
+    tools:context=".flashcard.AddCardToCategory">
+
+
+
+        <EditText
+            android:id="@+id/f_add_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+
+            android:gravity="center"
+            android:hint="@string/f_enter_word"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/f_add_word_defination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/f_enter_definitions"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/f_add_word"/>
+
+        <EditText
+            android:id="@+id/f_add_word_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/f_enter_sentences"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/f_add_word_defination"/>
+
+        <ImageView
+            android:id="@+id/f_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_add_word_sentence"/>
+
+
+        <Button
+            android:id="@+id/f_cancel_word_detail_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/f_add_image"
+            android:backgroundTint="@color/red_for_cancel_buttons"
+            android:layout_marginStart="20dp"
+            android:text="@string/f_cancel_button"
+
+            />
+
+        <Button
+            android:id="@+id/f_add_word_detail_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_add_image"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/dark_shade_blue"
+            android:text="@string/f_add_button" />
+
+
+
+
+
+</RelativeLayout>
