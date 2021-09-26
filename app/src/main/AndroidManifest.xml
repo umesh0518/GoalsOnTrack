@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoalsOnTrack">
+        <activity android:name=".flashcard.EditWord"></activity>
+        <activity android:name=".flashcard.AllWordInCategory" />
+        <activity android:name=".flashcard.AddCardToCategory" />
+        <activity android:name=".flashcard.FlashcardPractice" />
         <activity android:name=".reminder.ReminderHome" />
         <activity android:name=".moneytracking.MoneytrackingHome" />
         <activity android:name=".todo.TodoHome" />

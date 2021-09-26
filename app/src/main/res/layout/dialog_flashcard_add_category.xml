@@ -4,31 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/dialog_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_shade_blue">
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:layout_below="@+id/dialog_top_layout">
 
         <EditText
             android:id="@+id/f_category_user_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/f_add_category_string"
-            android:inputType="textPersonName"
-            android:layout_margin="20dp"/>
-
+            android:inputType="textPersonName" />
 
 
         <Button
             android:id="@+id/f_cancel_category_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/f_category_user_input"
             android:backgroundTint="@color/red_for_cancel_buttons"
             android:text="@string/f_cancel_button"
-            android:layout_below="@+id/f_category_user_input"
 
             />
 
@@ -36,10 +43,10 @@
             android:id="@+id/f_add_category_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/dark_shade_blue"
-            android:text="@string/f_add_button"
             android:layout_below="@+id/f_category_user_input"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/dark_shade_blue"
+            android:text="@string/f_add_button" />
 
 
     </RelativeLayout>

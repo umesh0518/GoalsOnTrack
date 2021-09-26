@@ -2,30 +2,29 @@ package com.example.goalsontrack.flashcard;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.goalsontrack.R;
 
-public class FlashcardHome extends AppCompatActivity implements FlashcardAddCategoryDialog.UserInputListner {
+
+
+
+public class FlashcardHome extends AppCompatActivity {
 
     private static final String TAG = "Flashcard homepage:";
 
-    private Button btnCancel;
-    private ImageView plusImageButton;
-    public TextView inputText;
+    //public static FragmentManager fragmentManager;
+    Fragment fragment_list_view_home = new HomepageListViewFragment();
+    Fragment fragment_empty_home = new EmptyHomepageFragment();
 
-    // variables
-    String userInputText;
-
-
-
-
-
+    private int test = 11;
 
 
 
@@ -33,39 +32,45 @@ public class FlashcardHome extends AppCompatActivity implements FlashcardAddCate
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flashcard_home);
+        Log.i(TAG, "flashcardHome----On create is called--- and test value is :"+test);
 
+        // loading conditional fragments
+        if (findViewById(R.id.flashcard_homepage_container)!=null){
 
-
+            if(savedInstanceState !=null){
+                return; // activity use savedInstanceState to restore previous state
+            }
+            else if (test ==1){
+                loadEmptyHomeLayout();
+            }
+            else{
+                loadListHomeLayout();
+            }
+        }
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
-        // setting value of variables
-        plusImageButton = this.findViewById(R.id.f_add_category_plus);
-        inputText = findViewById(R.id.f_category_user_input);
-        // views
-        Button btnAdd = findViewById(R.id.f_add_category_button);
-        btnCancel = findViewById(R.id.f_cancel_category_button);
-
-
-        plusImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "Dialog to add category opened:");
-                FlashcardAddCategoryDialog dialog = new FlashcardAddCategoryDialog();
-                dialog.show(getSupportFragmentManager(), "FlashcardAddCategoryDialog");
-
-
-            }
-        });
+        Log.i(TAG, "On resume is called--- and test value is :"+test);
     }
 
-    @Override
-    public void sendUserInput(String input) {
-        Log.i(TAG, "input sent from dialog was :"+ input);
-
+    void loadEmptyHomeLayout(){
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.flashcard_homepage_container,fragment_empty_home); // (to be replaced, what will replace)
+        ft.commit(); // finally commit
+        test = test + 1;
+        Log.i(TAG, "flashcardHomeempty opened and test value is :"+test);
     }
+
+    void loadListHomeLayout() {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.flashcard_homepage_container,fragment_list_view_home); // (to be replaced, what will replace)
+        ft.commit(); // finally commit
+        Log.i(TAG, "flashcardHomeList opened and test value is :"+test);
+    }
+
 }

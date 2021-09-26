@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void loadTodoList(View view){
         Intent startTodoList = new Intent(this, TodoHome.class);
         Toast.makeText(this,"Opening Todo List", Toast.LENGTH_SHORT).show();
@@ -48,4 +49,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(startReminder);
 
     }
+
 }

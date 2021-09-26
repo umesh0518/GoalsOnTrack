@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/flashcard_single_cat_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/flashcard_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/flashcard_3_dot_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/vertical_3_dot_menu" />
+
+        <Button
+            android:id="@+id/flashcard_add_card_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_shade_blue"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/flashcard_category_title"
+            android:text="@string/f_add_card_button" />
+        <Button
+            android:id="@+id/flashcard_practice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/dark_shade_blue"
+            android:layout_below="@+id/flashcard_category_title"
+            android:layout_toRightOf="@+id/flashcard_add_card_button"
+            android:layout_marginLeft="20dp"
+            android:text="@string/f_practice_button" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
