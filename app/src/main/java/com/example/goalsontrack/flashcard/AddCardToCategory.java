@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.goalsontrack.R;
@@ -40,6 +41,11 @@ public class AddCardToCategory extends AppCompatActivity {
         // getting intent's key from previous
         String parentKey = getIntent().getStringExtra("key");
         String childKey = getIntent().getStringExtra("childKey");
+
+        //seting title dynamically
+        TextView titleToAddWord = findViewById(R.id.f_title_when_adding_card);
+        titleToAddWord.setText("Add to "+parentKey);
+
 
         Log.i("messaage:", "message from previous activity in test is parent is :"+parentKey);
         Log.i("messaage:", "message from previous activity in test is of child is : :"+childKey);
@@ -81,10 +87,11 @@ public class AddCardToCategory extends AppCompatActivity {
                         Toast.makeText(AddCardToCategory.this, "Please enter a word. Field cannot be empty", Toast.LENGTH_SHORT).show();
                     }
                     else if(TextUtils.isEmpty(wordDefination.getText().toString())){
-                        Toast.makeText(AddCardToCategory.this, "Defination of word is required", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddCardToCategory.this, "Definition of word is required", Toast.LENGTH_SHORT).show();
                     }
                     else{
 
+                        //Saving word data under same category to database
                         dbReference.child(wordObject.getWord()).setValue(wordObject);
                         Toast.makeText(AddCardToCategory.this, "Data added successfully", Toast.LENGTH_SHORT).show();
                         finish();// will finish this activity and return to calling
@@ -92,7 +99,7 @@ public class AddCardToCategory extends AppCompatActivity {
                     }
 
                 }catch(Exception e){
-                    Log.d("Error:", "Error occured:"+e );
+                    Log.d("Error:", "Error occurred:"+e );
                 }
 
             }

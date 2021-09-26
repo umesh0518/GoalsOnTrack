@@ -41,8 +41,6 @@ public class FlashcardPractice extends AppCompatActivity {
     private RecyclerView practiceRecyclerView;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,8 +59,10 @@ public class FlashcardPractice extends AppCompatActivity {
         String parentKey = getIntent().getStringExtra("key");
         String childKey = getIntent().getStringExtra("childKey");
 
-        Log.i("messaage:", "message from previous activity in test is parent is :"+parentKey);
-        Log.i("messaage:", "message from previous activity in test is of child is : :"+childKey);
+
+
+        Log.i("messaage:", "message from previous activity in Practice for parent is :"+parentKey);
+        Log.i("messaage:", "and for child is : :"+childKey);
 
 
 //        //setting up view variables
@@ -86,7 +86,7 @@ public class FlashcardPractice extends AppCompatActivity {
 
                 // this value is going to PracticeViewHolder
                 holder.frontQuestionSide.setText(""+model.getWord());
-                holder.backAnswerSide.setText("Word: "+model.getWord()+"\n\n"+"Defination: "+model.getDefinations()+"\n\n"+"Sentence: "+model.getSentence());
+                holder.backAnswerSide.setText("Word:\n "+model.getWord()+"\n\n"+"Definition:\n "+model.getDefinations()+"\n\n"+"Sentence:\n "+model.getSentence());
                 holder.btnClose.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

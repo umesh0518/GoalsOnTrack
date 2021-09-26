@@ -49,7 +49,7 @@ public class EditWord extends AppCompatActivity {
 
 
 
-        //geting intent values
+        //getting intent values
         String parentId = getIntent().getStringExtra("parentKeyId");
         String childID = getIntent().getStringExtra("childKeyId");
 
@@ -60,6 +60,7 @@ public class EditWord extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 if(snapshot.hasChildren()){
+                    //reading the value using key and setting to edit text
                     Word wordFromDb = snapshot.getValue(Word.class);
                     word.setText(wordFromDb.getWord().toString());
                     wordDef.setText(wordFromDb.getDefinations().toString());
@@ -96,7 +97,7 @@ public class EditWord extends AppCompatActivity {
                 updatedWord.setDefinations(wordDef.getText().toString());
                 updatedWord.setSentence(wordSentence.getText().toString());
 
-                //Updating db
+                //Updating db(with Exception handling
                 try{
                     DatabaseReference dbReference = FirebaseDatabase.getInstance().getReference("Category").child(parentId);
                     dbReference.child(updatedWord.getWord()).setValue(updatedWord);

@@ -37,6 +37,9 @@ public class AllWordInCategory extends AppCompatActivity {
     FirebaseRecyclerOptions<Word> options;
     FirebaseRecyclerAdapter<Word, WordsViewHolder> adapter;
     RecyclerView wordsRecyclerView;
+    //Setting title of the category to word list on top
+    TextView headingOfCategory;;
+
 
 
 
@@ -55,6 +58,10 @@ public class AllWordInCategory extends AppCompatActivity {
         // getting intent's key from FlashcardListViewFragment
         String parentKey = getIntent().getStringExtra("key");
         String childKey = getIntent().getStringExtra("childKey");
+
+        // setting category title from db
+        headingOfCategory = findViewById(R.id.f_list_of_word_in_one_cat);
+        headingOfCategory.setText(parentKey);// got from intent
 
 
 //        //setting up view variables

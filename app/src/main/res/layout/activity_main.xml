@@ -6,11 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/dark_shade_blue"
+        android:text=" Welcome !"/>
+
     <Button
         android:id="@+id/flashcard_menu_name"
-        android:layout_width="161dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_shade_blue"
         android:onClick="loadFlashcard"
         android:text="@string/flashcard_menu_name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,9 +32,12 @@
 
     <Button
         android:id="@+id/todo_bttn"
-        android:layout_width="161dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_shade_blue"
         android:onClick="loadTodoList"
         android:text="@string/td_menu_bttn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,9 +46,12 @@
 
     <Button
         android:id="@+id/mt_bttn"
-        android:layout_width="161dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_shade_blue"
         android:onClick="loadMoneyTracking"
         android:text="@string/mt_menu_bttn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,9 +60,12 @@
 
     <Button
         android:id="@+id/reminders_bttn"
-        android:layout_width="161dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_shade_blue"
         android:onClick="loadReminder"
         android:text="@string/reminder_menu_bttn"
         app:layout_constraintEnd_toEndOf="parent"

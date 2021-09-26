@@ -6,13 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".flashcard.HomepageListViewFragment">
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/all_cat_text_view_f"
+    android:text="All Categories"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="20dp"
+    android:textAllCaps="true"
+    android:textSize="24sp"
+    android:textColor="@color/dark_shade_blue"
+    android:textAlignment="center"
+    android:layout_centerHorizontal="true"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/flashcard_recycler_view_all_category_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/all_cat_text_view_f"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_add_button_flashcard"
