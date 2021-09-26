@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_shade_blue"
+    tools:context=".activity_reminder_day">
+
+    <TextView
+        android:id="@+id/day_txtview"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:text="@string/day_txtview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <EditText
+        android:id="@+id/text_reminder1"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:layout_editor_absoluteX="59dp" />
+
+    <EditText
+        android:id="@+id/txt_reminder3"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btn1"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_txtview" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btn2"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btn3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_day_btn"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:src="@drawable/add_icon"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="661dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        app:backgroundTint="@color/teal_200"
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="550dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/event_icon"
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

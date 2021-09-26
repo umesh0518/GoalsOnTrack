@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cellDayText" type="id">cellDay</item>
+    <item name="calendarRecyclerView" type="id">calendarRecycler</item>
+    <item name="monthYearTV" type="id">monthYear</item>
+    <item name="eventNameET" type="id">eventName</item>
+    <item name="eventDateTV" type="id">eventDate</item>
+    <item name="eventTimeTV" type="id">eventTime</item>
+</resources>

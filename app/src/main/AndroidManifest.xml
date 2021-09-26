@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoalsOnTrack">
-        <activity android:name=".reminder.ReminderHome"></activity>
+        <activity
+            android:name=".activity_reminder_day"
+            android:exported="true" />
+        <activity android:name=".activity_reminder_monthly" />
+        <activity android:name=".activity_reminder_yearly" />
+        <activity android:name=".day_reminder" />
+        <activity android:name=".reminder.ReminderHome" />
         <activity android:name=".moneytracking.MoneytrackingHome" />
         <activity android:name=".todo.TodoHome" />
         <activity android:name=".flashcard.FlashcardHome" />

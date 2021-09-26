@@ -1,6 +1,32 @@
 <resources>
     <!-- only common parts here  -->
     <string name="app_name">GoalsOnTrack</string>
+    <string name="monthly_txt">GoalsOnTrack</string>
+    <string name="day_txt">GoalsOnTrack</string>
+    <string name="year_btn1">2022</string>
+    <string name="year_btn2">2023</string>
+    <string name="year_btn3">2024</string>
+    <string name="year_btn4">2025</string>
+    <string name="year_btn5">2026</string>
+    <string name="year_btn6">2027</string>
+    <string name="year_btn7">2028</string>
+    <string name="year_btn8">2029</string>
+    <string name="year_btn9">2030</string>
+    <string name="day_txt1" />
+    <string name="day_txtview">GoalsOnTrack</string>
+    <string name="btn1">Day</string>
+    <string name="btn2">Monthly</string>
+    <string name="btn3">Yearly</string>
+    <string name="btn__1">Day</string>
+    <string name="btn__2">Monthly</string>
+    <string name="btn__3">Yearly</string>
+    <string name="btn_1">Day</string>
+    <string name="btn_2">Monthly</string>
+    <string name="btn_3">Yearly</string>
+    <string name="btn___1">Day</string>
+    <string name="btn___2">Monthly</string>
+    <string name="btn___3">Yearly</string>
+
 
 
 </resources>

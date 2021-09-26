@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/dark_shade_blue"
+    tools:context=".activity_reminder_yearly">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/yearly_txt"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:text="GoalsOnTrack"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <TextView
+        android:id="@+id/btn_txt"
+        android:layout_width="347dp"
+        android:layout_height="212dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/year_btn1"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn1"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <Button
+        android:id="@+id/year_btn2"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn2"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <Button
+        android:id="@+id/year_btn3"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn3"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <Button
+        android:id="@+id/year_btn4"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn4"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <Button
+        android:id="@+id/year_btn5"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn5"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <Button
+        android:id="@+id/year_btn6"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn6"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <Button
+        android:id="@+id/year_btn7"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn7"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <Button
+        android:id="@+id/year_btn8"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn8"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <Button
+        android:id="@+id/year_btn9"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:text="@string/year_btn9"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/btn_txt"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/btn___1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        android:text="@string/btn___1"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearly_txt" />
+
+    <Button
+        android:id="@+id/btn___2"
+        android:layout_width="114dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:text="@string/btn___2"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <Button
+        android:id="@+id/btn___3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:text="@string/btn___3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/add_icon"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="644dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_delete"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
