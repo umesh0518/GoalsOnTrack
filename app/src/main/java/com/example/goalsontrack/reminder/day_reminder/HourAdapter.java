@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.goalsontrack.R;
+
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +30,7 @@ public class HourAdapter extends ArrayAdapter<HourEvent>
         HourEvent event = getItem(position);
 
         if (convertView == null)
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.hour_cell, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.mtrl_calendar_day, parent, false);
 
         setHour(convertView, event.time);
         setEvents(convertView, event.events);
@@ -38,15 +40,15 @@ public class HourAdapter extends ArrayAdapter<HourEvent>
 
     private void setHour(View convertView, LocalTime time)
     {
-        TextView timeTV = convertView.findViewById(R.id.timeTV);
+        TextView timeTV = convertView.findViewById(R.id.time);
         timeTV.setText(CalendarUtils.formattedShortTime(time));
     }
 
     private void setEvents(View convertView, ArrayList<Event> events)
     {
-        TextView event1 = convertView.findViewById(R.id.event1);
-        TextView event2 = convertView.findViewById(R.id.event2);
-        TextView event3 = convertView.findViewById(R.id.event3);
+        TextView event1 = convertView.findViewById(R.id.eventTimeTV);
+        TextView event2 = convertView.findViewById(R.id.eventDateTV);
+        TextView event3 = convertView.findViewById(R.id.eventNameET);
 
         if(events.size() == 0)
         {

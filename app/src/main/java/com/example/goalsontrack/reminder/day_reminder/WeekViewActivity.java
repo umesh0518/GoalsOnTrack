@@ -1,18 +1,24 @@
 package com.example.goalsontrack.reminder.day_reminder;
 
 
-import static com.example.day_reminder.CalendarUtils.daysInWeekArray;
-import static com.example.day_reminder.CalendarUtils.monthYearFromDate;
+import static com.example.goalsontrack.reminder.day_reminder.CalendarUtils.daysInWeekArray;
+import static com.example.goalsontrack.reminder.day_reminder.CalendarUtils.monthYearFromDate;
+import static com.example.goalsontrack.reminder.day_reminder.CalendarUtils.daysInWeekArray;
+import static com.example.goalsontrack.reminder.day_reminder.CalendarUtils.monthYearFromDate;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.goalsontrack.R;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -27,7 +33,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_week_view);
+        setContentView(R.layout.activity_reminder_monthly);
         initWidgets();
         setWeekView();
     }
@@ -36,7 +42,7 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     {
         calendarRecyclerView = findViewById(R.id.calendarRecyclerView);
         monthYearText = findViewById(R.id.monthYearTV);
-        eventListView = findViewById(R.id.eventListView);
+        eventListView = findViewById(R.id.on);
     }
 
     private void setWeekView()
@@ -52,12 +58,14 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void previousWeekAction(View view)
     {
         CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusWeeks(1);
         setWeekView();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void nextWeekAction(View view)
     {
         CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusWeeks(1);
