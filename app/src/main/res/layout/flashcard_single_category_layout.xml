@@ -9,7 +9,8 @@
         android:id="@+id/flashcard_single_cat_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        android:background="@drawable/empty_rectagle">
 
         <TextView
             android:id="@+id/flashcard_category_title"
@@ -20,7 +21,8 @@
             android:layout_marginBottom="10dp"
             android:textAllCaps="true"
             android:clickable="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/dark_shade_blue"/>
 
         <ImageView
             android:id="@+id/flashcard_3_dot_menu"
@@ -41,7 +43,7 @@
             android:id="@+id/flashcard_practice_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#A1A7B9"
             android:textColor="@color/dark_shade_blue"
             android:layout_below="@+id/flashcard_category_title"
             android:layout_toRightOf="@+id/flashcard_add_card_button"

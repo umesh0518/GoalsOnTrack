@@ -8,39 +8,82 @@ tools:context=".flashcard.EditWord">
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:background="@color/dark_shade_blue"
-    android:id="@+id/edit_dialog_top_layout"
-    />
+    android:layout_height="wrap_content"
+    android:id="@+id/edit_dialog_top_layout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:text="Edit Word"
+        android:textColor="@color/dark_shade_blue"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:layout_below="@+id/edit_dialog_top_layout">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_edit_word_hint_1"
+        android:layout_margin="10dp"
+        android:text="Word"
+        android:textColor="@color/dark_shade_blue"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/f_edit_word_name"
-        android:layout_marginTop="40dp"
+        android:layout_below="@+id/f_edit_word_hint_1"
+        android:layout_margin="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_edit_word_hint_2"
+        android:layout_below="@+id/f_edit_word_name"
+        android:layout_margin="10dp"
+        android:text="Definition"
+        android:textColor="@color/dark_shade_blue"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/f_edit_word_defination"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/f_edit_word_name"/>
+        android:layout_margin="10dp"
+        android:layout_below="@+id/f_edit_word_hint_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_edit_word_hint_3"
+        android:layout_below="@+id/f_edit_word_defination"
+        android:layout_margin="10dp"
+        android:text="Sentence"
+        android:textColor="@color/dark_shade_blue"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/f_edit_word_sentence"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/f_edit_word_defination"/>
+        android:layout_margin="10dp"
+        android:layout_below="@+id/f_edit_word_hint_3"/>
 
     <Button
         android:layout_width="150dp"

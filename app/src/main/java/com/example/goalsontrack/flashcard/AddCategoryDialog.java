@@ -87,6 +87,8 @@ public class AddCategoryDialog extends DialogFragment  {
 
                         //dbReference.push().setValue(categories);
                         Word word = new Word();
+
+                        //firebase does not allow just empty key to be added so for first time dummy data should be given which can deleted
                         word.setWord("dummy word here");
                         word.setDefinations("");
                         word.setSentence((""));
