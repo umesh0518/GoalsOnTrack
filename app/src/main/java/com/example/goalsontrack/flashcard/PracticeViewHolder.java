@@ -2,6 +2,7 @@ package com.example.goalsontrack.flashcard;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,7 +16,8 @@ import org.jetbrains.annotations.NotNull;
 public class PracticeViewHolder extends RecyclerView.ViewHolder {
 
     //setting up view variables
-    Button btnNext, btnPrevious, btnClose, btnShowAnswer, btnShowQuestion;
+    ImageButton btnClose;
+    Button btnNext, btnPrevious, btnShowAnswer, btnShowQuestion;
     TextView frontQuestionSide, backAnswerSide;
 
 

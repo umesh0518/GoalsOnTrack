@@ -5,41 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+
+    <ImageButton
         android:id="@+id/f_btn_close_practice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="#0FFFFFFF"
+        android:layout_marginEnd="32dp"
+        android:padding="15dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        app:icon="@android:drawable/ic_menu_close_clear_cancel"
-        app:iconTint="@color/red_for_cancel_buttons"/>
+        app:srcCompat="@drawable/ic_baseline_close_24" />
 
     <TextView
         android:id="@+id/f_card_front"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
         android:textAlignment="center"
         android:textColor="@color/dark_shade_blue"
         android:textSize="22sp"
+        android:background="@drawable/empty_rectagle"
         android:layout_below="@+id/f_btn_close_practice" />
 
     <TextView
         android:id="@+id/f_card_back"
         android:layout_width="match_parent"
         android:layout_height="400dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
         android:textAlignment="center"
         android:textColor="@color/dark_shade_blue"
         android:textSize="22sp"
+        android:background="@drawable/empty_rectagle"
         android:layout_below="@+id/f_btn_close_practice"
         android:visibility="invisible"/>
 
